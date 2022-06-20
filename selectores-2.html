@@ -1,0 +1,64 @@
+<!-- Selectores Combinadores -->
+<!-- 
+        Todos dentro de Div.
+    De Hijos Decendientes = div p
+
+        Elemento Especifico que sigue dentro de Div.
+    De Hijo Directo = div > p
+
+        Elemento Uno al Lado del Otro.
+    De Elemento Adyacente = div + p
+
+        El hermano que este despues de div.
+    De General de Hermanos = div ~ p
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores Combinadores</title>
+    <style>
+        div p {
+            color: lime;
+        }
+
+        div>div {
+            background: plum;
+        }
+
+        .es {
+            background: red;
+        }
+
+        div + section {
+            background: palevioletred;
+        }
+
+        div ~ p {
+            color: powderblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div>
+            <p>Platzi</p>
+            <div class="es">Es</div>
+        </div>
+    </div>
+    </div>
+    <p>Clase de Selectores</p>
+    <p>Clase de Selectores</p>
+    <section>
+        Es lo mejor.
+    </section>
+    <div>
+        Master
+</body>
+
+</html>
